@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+    <div class="pcComponents">
+        <h1>Dixie Electronics Order Form</h1>
+        <div class="individualComponent">
+            <label for="cpu">CPU:</label>
+            <input type="number" value="0" id="cpu" name="cpuQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <div class="individualComponent">
+            <label for="gpu">GPU:</label>
+            <input type="number" value="0" id="gpu" name="gpuQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <div class="individualComponent">
+            <label for="ram">RAM (8GB Sticks):</label>
+            <input type="number" value="0" id="ram" name="ramQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <div class="individualComponent">
+            <label for="storage">Storage (2TB SSDs):</label>
+            <input type="number" value="0" id="storage" name="storageQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <div class="individualComponent">
+            <label for="psu">Power Supply Unit (PSU):</label>
+            <input type="number" value="0" id="psu" name="psuQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <div class="individualComponent">
+            <label for="motherboard">Motherboard:</label>
+            <input type="number" value="0" id="motherboard" name="motherboardQuantity" min="0" onchange="calculateTotal()">
+        </div>
+        <p>Total Cost: ZAR <span id="totalCost">0</span></p>
+    </div>
+    
+    <div class="personalInfo">
+        <form id="orderForm">
+            <label for="name">Full Name:</label>
+            <input type="text" id="name" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" required>
+
+            <label for="phone">Phone Number:</label>
+            <input type="tel" id="phone" required>
+
+            <label for="address">Delivery Address:</label>
+            <input type="text" id="address" required>
+
+            <button type="submit">Submit Order</button>
+        </form>
+        <div id="orderConfirmation"></div>
+    </div>
+    
+    <script src="script.js"></script>
+</body>
+</html>

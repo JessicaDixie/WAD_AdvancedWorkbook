@@ -1,0 +1,47 @@
+body {
+    font-family: Arial, sans-serif;
+}
+.pcComponents, .personalInfo {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+}
+.individualComponent {
+    margin-bottom: 20px;
+}
+input[type="text"],
+input[type="email"],
+input[type="tel"],
+select,
+input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#orderConfirmation {
+    margin-top: 20px;
+    text-align: center;
+    font-weight: bold;
+}
+p {
+    font-weight: bold;
+}
